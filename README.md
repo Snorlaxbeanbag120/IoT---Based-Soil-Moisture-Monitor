@@ -12,6 +12,7 @@ Problem Statement
 Traditional plant watering systems lack feedback mechanisms and remote accessibility, often leading to inefficient watering. The challenge is to develop a real-time monitoring system that alerts users to soil moisture conditions and allows remote control of warning devices.
  
 Architecture / Block Diagram
+
 ![image](https://github.com/user-attachments/assets/aed65fa3-a20a-42ee-b264-e987ac5da9c5)
 
 
