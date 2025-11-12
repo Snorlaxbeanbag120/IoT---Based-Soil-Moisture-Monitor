@@ -45,6 +45,7 @@ Traditional plant watering systems lack feedback mechanisms and remote accessibi
 •	Buzzer → D6 (GPIO12)
 •	Push button → D2 (GPIO4) with pull-up
 
+
  <img width="399" height="181" alt="image" src="https://github.com/user-attachments/assets/02d6a74c-d361-445c-acdb-c2a69260f03f" />
 
 **Flowchart**
