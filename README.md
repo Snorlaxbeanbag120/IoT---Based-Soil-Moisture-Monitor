@@ -3,12 +3,15 @@
 IoT-based Soil Moisture and Environmental Monitoring System with Remote Control
  
 **Motivation**
+
 Efficient water management is essential for healthy plants and environmental conservation. Many watering methods are inefficient, wasting water or failing to respond to actual soil needs. This project aims to create a smart, remotely accessible system to monitor soil moisture and environmental conditions, helping optimize plant care.
  
 **Introduction**
+
 This project demonstrates an IoT prototype using an ESP8266 microcontroller with soil moisture and temperature/humidity sensors. Data is sent to Firebase Realtime Database for storage and made accessible via MQTT messaging. Remote control of actuators (LED and buzzer) is achieved through a mobile MQTT client app, allowing real-time alerts and device management over the internet.
  
-Problem Statement
+**Problem Statement**
+
 Traditional plant watering systems lack feedback mechanisms and remote accessibility, often leading to inefficient watering. The challenge is to develop a real-time monitoring system that alerts users to soil moisture conditions and allows remote control of warning devices.
  
 **Architecture / Block Diagram**
@@ -18,20 +21,23 @@ Traditional plant watering systems lack feedback mechanisms and remote accessibi
 
   
 **Hardware Components: **
+
 •	ESP8266 microcontroller
 •	Soil moisture sensor (analog)
 •	DHT11 temperature and humidity sensor
 •	LED with resistor
 •	Buzzer
 •	Push button for buzzer silence
+
 **Software Components:**
+
 •	Arduino IDE with ESP8266 board libraries
 •	Firebase ESP Client library
 •	PubSubClient MQTT library
 •	Mobile MQTT Client App (MyMQTT) 
  
 
-Circuit Diagram
+**Circuit Diagram**
 
 •	Soil moisture sensor → A0
 •	DHT11 → D3
@@ -53,6 +59,7 @@ Circuit Diagram
 •	Silence buzzer on button press
  
 **Implementation and Results**
+
 •	The device successfully connects to WiFi and Firebase Realtime Database, uploading sensor data every second.
 •	Sensor readings for soil moisture, temperature, and humidity were reliably captured and stored in the cloud.
 •	The MQTT communication setup was implemented to allow remote control of the LED and buzzer actuators via a mobile MQTT client app.
@@ -68,6 +75,7 @@ Circuit Diagram
  ![image](https://github.com/user-attachments/assets/e7759e57-6673-4ed8-be99-9199ea0a5ffd)
  
 **Screenshot from MyMQTT app **
+
 ![image](https://github.com/user-attachments/assets/c8fccb0c-f5ef-49b3-a0dd-20a085b31322)
 
  
@@ -77,9 +85,11 @@ Circuit Diagram
 
  
 **Conclusion**
+
 The IoT prototype demonstrates an effective integration of environmental sensors with cloud data storage and an MQTT-based communication protocol. While sensor data was reliably monitored and uploaded to Firebase, remote control of actuators via MQTT was hindered by poor internet connectivity during testing. This connectivity issue impacted the real-time responsiveness of the LED and buzzer controls. With a more stable and faster internet connection, the system is expected to perform as intended, providing seamless remote monitoring and control. Future improvements could focus on enhancing network reliability and extending actuator control features for automation.
  
 **References**
+
 •	Firebase ESP Client library: https://github.com/mobizt/Firebase-ESP-Client
 •	PubSubClient MQTT library: https://github.com/knolleary/pubsubclient
 •	ESP8266 Arduino core: https://github.com/esp8266/Arduino
