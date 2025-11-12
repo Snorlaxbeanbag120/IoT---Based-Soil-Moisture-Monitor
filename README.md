@@ -47,8 +47,10 @@ Traditional plant watering systems lack feedback mechanisms and remote accessibi
 
 
  <img width="399" height="181" alt="image" src="https://github.com/user-attachments/assets/02d6a74c-d361-445c-acdb-c2a69260f03f" />
+ 
 
 **Flowchart**
+
 
 •	Initialize WiFi, MQTT, Firebase, sensors, and actuators
 •	Continuously read sensor values
